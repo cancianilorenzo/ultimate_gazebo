@@ -18,13 +18,5 @@
     <arg name="debug"      value="$(arg debug)"/>
     <arg name="gui"        value="$(arg gui)"/>
   </include>
-
-  <arg name="table" default="$(find ultimate_gazebo)/models/cafe_table/model.sdf"/>
-
-
-  <!-- Spawn Work surface -->
-  <node name="spawn_work_surface" pkg="gazebo_ros" type="spawn_model"
-        args="-sdf -file $(arg table) -model cafe_table -x 0 -y -0.558 -z 0 -Y -3.1415926535"
-  output="screen" />
   
 </launch>
