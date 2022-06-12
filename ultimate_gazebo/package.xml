@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>ultimate_gazebo</name>
+  <version>0.0.0</version>
+  <description>Gazebo pkg for ultimate_robot</description>
+
+  <maintainer email="lorenzo.canciani@studenti.unitn.it">Lorenzo Canciani</maintainer>
+  <author email="lorenzo.canciani@studenti.unitn.it">Lorenzo Canciani</author>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <export>
+  </export>
+
+</package>
