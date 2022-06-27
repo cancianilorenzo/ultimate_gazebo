@@ -7,12 +7,12 @@
                 <pose>1.32032e-07 -0.00018706 0.000747676 0 0 0</pose>
                 <mass>0.028148</mass>
                 <inertia>
-                    <ixx>4.98507e-05</ixx>
+                    <ixx>4.98507e-10</ixx>
                     <ixy>-7.16149e-09</ixy>
                     <ixz>-9.85412e-11</ixz>
-                    <iyy>1.13728e-05</iyy>
+                    <iyy>4.13728e-10</iyy>
                     <iyz>-5.87586e-08</iyz>
-                    <izz>4.59655e-05</izz>
+                    <izz>4.59655e-10</izz>
                 </inertia>
             </inertial>
             <collision name="collision">
