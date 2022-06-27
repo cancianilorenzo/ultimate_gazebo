@@ -77,7 +77,7 @@
           <material>
             <script>
               <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
+              <name>Gazebo/White</name>
             </script>
           </material>
         </visual>
@@ -156,7 +156,7 @@
         </link>
       </model>
       <model name='end_table'>
-        <pose>0.621398 -0.02786 0 0 0 -1.5707</pose>
+        <pose>0.621398 -0.02786 0 0 0 1.5707</pose>
         <scale>1 1 1</scale>
         <link name='leg1'>
           <pose>0.621377 -0.24787 0.4 0 0 -1.5707</pose>
@@ -171,7 +171,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='top_plate'>
-          <pose>0.621398 -0.02786 0.755 0 0 -1.5707</pose>
+          <pose>0.621398 -0.08786 0.755 0 0 -1.5707</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
