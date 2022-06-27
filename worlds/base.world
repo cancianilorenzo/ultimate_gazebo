@@ -403,7 +403,7 @@
     <model name='end_table'>
       <static>1</static>
       <link name='top_plate'>
-        <pose>0 0 0.755 0 -0 0</pose>
+        <pose>0 0 0.755 0 -0 3.14</pose>
         <collision name='top_plate_collision'>
           <geometry>
             <box>
@@ -444,7 +444,7 @@
         <kinematic>0</kinematic>
       </link>
       <link name='leg1'>
-        <pose>0.22 -0.1 0.4 0 -0 0</pose>
+        <pose>0.22 0.1 0.4 0 -0 0</pose>
         <collision name='leg1_collision'>
           <geometry>
             <box>
@@ -483,7 +483,7 @@
         <kinematic>0</kinematic>
       </link>
       <link name='leg2'>
-        <pose>-0.22 -0.1 0.4 0 -0 0</pose>
+        <pose>-0.22 0.1 0.4 0 -0 0</pose>
         <collision name='leg2_collision'>
           <geometry>
             <box>
