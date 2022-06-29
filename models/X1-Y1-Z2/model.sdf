@@ -4,22 +4,22 @@
         <link name="link">
             <pose>-0.0 -0.0 -0.0 0 0 0</pose>
             <inertial>
-                <pose>1.89496e-06 -3.89054e-07 -0.000475081 0 0 0</pose>
-                <mass>0.00802771</mass>
+                <mass>0.00891495</mass>
                 <inertia>
-                    <ixx>3.14179e-06</ixx>
-                    <ixy>-2.69251e-10</ixy>
-                    <ixz>-4.52438e-10</ixz>
-                    <iyy>3.14364e-06</iyy>
-                    <iyz>3.14783e-10</iyz>
-                    <izz>1.98462e-06</izz>
+                    <ixx>5.98e-04</ixx>
+                    <ixy>0.0</ixy>
+                    <ixz>-0.0</ixz>
+                    <iyy>2.35e-04</iyy>
+                    <iyz>-0.0</iyz>
+                    <izz>5.01e-04</izz>
                 </inertia>
+            </inertial>
             </inertial>
             <collision name="collision">
                 <geometry>
                     <mesh>
                         <scale>1 1 1</scale>
-                        <uri>model://lego_X1-Y1-Z2/meshes/X1-Y1-Z2.stl</uri>
+                        <uri>model://X1-Y1-Z2/meshes/X1-Y1-Z2.stl</uri>
                     </mesh>
                 </geometry>
 
@@ -51,7 +51,7 @@
                 <geometry>
                     <mesh>
                         <scale>1 1 1</scale>
-                        <uri>model://lego_X1-Y1-Z2/meshes/X1-Y1-Z2.stl</uri>
+                        <uri>model://X1-Y1-Z2/meshes/X1-Y1-Z2.stl</uri>
                     </mesh>
                 </geometry>
                 <material>

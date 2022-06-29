@@ -3,23 +3,22 @@
     <model name="lego_X1-Y2-Z2">
         <link name="link">
             <pose>-0.0 -0.0 -0.0 0 0 0</pose>
-            <inertial>
-                <pose>5.42691e-07 6.69307e-06 0.000398364 0 0 0</pose>
-                <mass>0.0146868</mass>
+             <inertial>
+                <mass>0.00891495</mass>
                 <inertia>
-                    <ixx>1.00644e-05</ixx>
-                    <ixy>-2.20574e-10</ixy>
-                    <ixz>6.78532e-11</ixz>
-                    <iyy>5.89081e-06</iyy>
-                    <iyz>-2.30188e-09</iyz>
-                    <izz>7.98702e-06</izz>
+                    <ixx>5.98e-04</ixx>
+                    <ixy>0.0</ixy>
+                    <ixz>-0.0</ixz>
+                    <iyy>2.35e-04</iyy>
+                    <iyz>-0.0</iyz>
+                    <izz>5.01e-04</izz>
                 </inertia>
             </inertial>
             <collision name="collision">
                 <geometry>
                     <mesh>
                         <scale>1 1 1</scale>
-                        <uri>model://lego_X1-Y2-Z2/meshes/X1-Y2-Z2.stl</uri>
+                        <uri>model://X1-Y2-Z2/meshes/X1-Y2-Z2.stl</uri>
                     </mesh>
                 </geometry>
 
@@ -49,7 +48,7 @@
                 <geometry>
                     <mesh>
                         <scale>1 1 1</scale>
-                        <uri>model://lego_X1-Y2-Z2/meshes/X1-Y2-Z2.stl</uri>
+                        <uri>model://X1-Y2-Z2/meshes/X1-Y2-Z2.stl</uri>
                     </mesh>
                 </geometry>
                 <material>

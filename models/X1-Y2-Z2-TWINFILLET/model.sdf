@@ -4,22 +4,21 @@
         <link name="link">
             <pose>-0.0 -0.0 -0.0 0 0 0</pose>
             <inertial>
-                <pose>1.24166e-07 1.92884e-05 -0.00283801 0 0 0</pose>
-                <mass>0.0111151</mass>
+                <mass>0.00891495</mass>
                 <inertia>
-                    <ixx>6.93062e-06</ixx>
-                    <ixy>-2.50799e-10</ixy>
-                    <ixz>-1.36591e-10</ixz>
-                    <iyy>4.25369e-06</iyy>
-                    <iyz>1.22292e-09</iyz>
-                    <izz>5.86714e-06</izz>
+                    <ixx>5.98e-04</ixx>
+                    <ixy>0.0</ixy>
+                    <ixz>-0.0</ixz>
+                    <iyy>2.35e-04</iyy>
+                    <iyz>-0.0</iyz>
+                    <izz>5.01e-04</izz>
                 </inertia>
             </inertial>
             <collision name="collision">
                 <geometry>
                     <mesh>
                         <scale>1 1 1</scale>
-                        <uri>model://lego_X1-Y2-Z2-TWINFILLET/meshes/X1-Y2-Z2-TWINFILLET.stl</uri>
+                        <uri>model://X1-Y2-Z2-TWINFILLET/meshes/X1-Y2-Z2-TWINFILLET.stl</uri>
                     </mesh>
                 </geometry>
 
@@ -49,7 +48,7 @@
                 <geometry>
                     <mesh>
                         <scale>1 1 1</scale>
-                        <uri>model://lego_X1-Y2-Z2-TWINFILLET/meshes/X1-Y2-Z2-TWINFILLET.stl</uri>
+                        <uri>model://X1-Y2-Z2-TWINFILLET/meshes/X1-Y2-Z2-TWINFILLET.stl</uri>
                     </mesh>
                 </geometry>
                 <material>
