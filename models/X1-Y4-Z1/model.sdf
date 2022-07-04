@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <sdf version="1.4">
-    <model name="lego_X1-Y4-Z1">
+    <model name="static_X1-Y4-Z1">
         <link name="link">
             <pose>-0.0 -0.0 -0.0 0 0 0</pose>
             <inertial>
@@ -66,5 +66,6 @@
                 </material>
             </visual>
         </link>
+        <static>1</static>
     </model>
 </sdf>
