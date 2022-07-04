@@ -14,7 +14,6 @@
                     <izz>5.01e-04</izz>
                 </inertia>
             </inertial>
-            </inertial>
             <collision name="collision">
                 <geometry>
                     <mesh>
