@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<sdf version="1.4">
+    <model name="lego_X1-Y3-Z2">
+        <link name="link">
+            <pose>-0.0 -0.0 -0.0 0 0 0</pose>
+            <inertial>
+                <mass>0.00891495</mass>
+                <inertia>
+                    <ixx>5.98e-04</ixx>
+                    <ixy>0.0</ixy>
+                    <ixz>-0.0</ixz>
+                    <iyy>2.35e-04</iyy>
+                    <iyz>-0.0</iyz>
+                    <izz>5.01e-04</izz>
+                </inertia>
+            </inertial>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                        <scale>1 1 1</scale>
+                        <uri>model://X1-Y3-Z2/meshes/X1-Y3-Z2.stl</uri>
+                    </mesh>
+                </geometry>
+
+                <max_contacts>10</max_contacts>
+                <surface>
+                    <contact>
+                        <ode>
+                            <mu>0.1</mu>
+                            <mu2>0.1</mu2>
+                            <max_vel>0.01</max_vel>
+                            <min_depth>0.0</min_depth>
+                        </ode>
+                    </contact>
+                    <bounce>
+                        <restitution_coefficient>0</restitution_coefficient>
+                        <threshold>1e+06</threshold>
+                    </bounce>
+                    <friction>
+                        <torsional>
+                            <ode/>
+                        </torsional>
+                        <ode/>
+                    </friction>
+                </surface>
+            </collision>
+            <visual name="visual">
+                <geometry>
+                    <mesh>
+                        <scale>1 1 1</scale>
+                        <uri>model://X1-Y3-Z2/meshes/X1-Y3-Z2.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <script>
+                    <uri>file://media/materials/scripts/gazebo.material</uri>
+                    <name>Gazebo/Grey</name>
+                    </script>
+                    <shader type="vertex">
+                        <normal_map>__default__</normal_map>
+                    </shader>
+                    <ambient>0.3 0.3 0.3 1</ambient>
+                    <diffuse>0.7 0.7 0.7 1</diffuse>
+                    <specular>0.01 0.01 0.01 1</specular>
+                    <emissive>0 0 0 1</emissive>
+                </material>
+            </visual>
+        </link>
+    </model>
+</sdf>

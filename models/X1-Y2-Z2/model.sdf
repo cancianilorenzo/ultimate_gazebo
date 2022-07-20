@@ -1,34 +1,43 @@
 <?xml version="1.0"?>
 <sdf version="1.4">
-    <model name="lego_X1-Y2-Z2">
-        <link name="link">
-            <pose>-0.0 -0.0 -0.0 0 0 0</pose>
-             <inertial>
-                <mass>0.00891495</mass>
-                <inertia>
-                    <ixx>5.98e-04</ixx>
-                    <ixy>0.0</ixy>
-                    <ixz>-0.0</ixz>
-                    <iyy>2.35e-04</iyy>
-                    <iyz>-0.0</iyz>
-                    <izz>5.01e-04</izz>
-                </inertia>
-            </inertial>
-            <collision name="collision">
-                <geometry>
-                    <mesh>
-                        <scale>1 1 1</scale>
-                        <uri>model://X1-Y2-Z2/meshes/X1-Y2-Z2.stl</uri>
-                    </mesh>
-                </geometry>
-
-                <max_contacts>10</max_contacts>
-                <surface>
+  <model name="X1-Y2-Z2">
+    <static>false</static>
+    <link name="link">
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0.029775e-02 0 0 0</pose>
+        <mass>14.626943e-6</mass>
+        <inertia>
+          <ixx>100.1e-10</ixx>
+          <ixy>0.00044e-10</ixy>
+          <ixz>-0.0027e-10</ixz>
+          <iyy>58.5e-10</iyy>
+          <iyz>-0.00236e-10</iyz>
+          <izz>79.66e-10</izz>
+        </inertia>
+      </inertial>
+      
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://X1-Y2-Z2/meshes/X1-Y2-Z2.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+      
+      <collision name="collision">
+      <surface>
                     <contact>
                         <ode>
-                            <mu>0.1</mu>
-                            <mu2>0.1</mu2>
-                            <max_vel>0.01</max_vel>
+                            <mu>200</mu>
+                            <mu2>200</mu2>
+                            <max_vel>0</max_vel>
                             <min_depth>0.0</min_depth>
                         </ode>
                     </contact>
@@ -43,28 +52,12 @@
                         <ode/>
                     </friction>
                 </surface>
-            </collision>
-            <visual name="visual">
-                <geometry>
-                    <mesh>
-                        <scale>1 1 1</scale>
-                        <uri>model://X1-Y2-Z2/meshes/X1-Y2-Z2.stl</uri>
-                    </mesh>
-                </geometry>
-                <material>
-                    <script>
-                    <uri>file://media/materials/scripts/gazebo.material</uri>
-                    <name>Gazebo/Grey</name>
-                    </script>
-                    <shader type="vertex">
-                        <normal_map>__default__</normal_map>
-                    </shader>
-                    <ambient>0.3 0.3 0.3 1</ambient>
-                    <diffuse>0.7 0.7 0.7 1</diffuse>
-                    <specular>0.01 0.01 0.01 1</specular>
-                    <emissive>0 0 0 1</emissive>
-                </material>
-            </visual>
-        </link>
-    </model>
+        <geometry>
+          <mesh>
+            <uri>model://X1-Y2-Z2/meshes/X1-Y2-Z2.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
 </sdf>

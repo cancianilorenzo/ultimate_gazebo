@@ -9,7 +9,7 @@
       <collision name="top_plate_collision">
         <geometry>
           <box>
-            <size>0.913 0.713 0.04</size>
+            <size>0.913 0.313 0.04</size>
           </box>
         </geometry>
         <surface>
