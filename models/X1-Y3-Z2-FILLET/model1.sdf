@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<sdf version="1.4">
+    <model name="X1-Y3-Z2-FILLET">
+        <link name="link">
+            <pose>-0.0 -0.0 -0.0 0 0 0</pose>
+            <inertial>
+                <mass>0.00831495</mass>
+                <inertia>
+                    <ixx>5.98e-04</ixx>
+                    <ixy>0.0</ixy>
+                    <ixz>-0.0</ixz>
+                    <iyy>2.35e-04</iyy>
+                    <iyz>-0.0</iyz>
+                    <izz>5.01e-04</izz>
+                </inertia>
+            </inertial>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                        <scale>1 1 1</scale>
+                        <uri>model://X1-Y3-Z2-FILLET/meshes/X1-Y3-Z2-FILLET.stl</uri>
+                    </mesh>
+                </geometry>
+
+                <max_contacts>10</max_contacts>
+                <surface>
+                    <contact>
+                        <collide_bitmask>0x0001</collide_bitmask>
+                        <ode>
+                            <mu>0.1</mu>
+                            <mu2>0.1</mu2>
+                            <max_vel>0.01</max_vel>
+                            <min_depth>0.0</min_depth>
+                        </ode>
+                    </contact>
+                    <bounce>
+                        <restitution_coefficient>0</restitution_coefficient>
+                        <threshold>1e+06</threshold>
+                    </bounce>
+                    <friction>
+                        <torsional>
+                            <ode/>
+                        </torsional>
+                        <ode/>
+                    </friction>
+                </surface>
+            </collision>
+            <visual name="visual">
+        <geometry>
+          <mesh>
+             <uri>model://X1-Y3-Z2-FILLET/meshes/X1-Y3-Z2-FILLET.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Orange</name>
+          </script>
+        </material>
+      </visual>
+        </link>
+    </model>
+</sdf>

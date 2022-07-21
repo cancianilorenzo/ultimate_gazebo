@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <sdf version="1.4">
-    <model name="X1-Y2-Z2-CHAMFER">
+    <model name="X2-Y2-Z2-FILLET">
         <link name="link">
             <pose>-0.0 -0.0 -0.0 0 0 0</pose>
             <inertial>
@@ -18,13 +18,14 @@
                 <geometry>
                     <mesh>
                         <scale>1 1 1</scale>
-                        <uri>model://X1-Y2-Z2-CHAMFER/meshes/X1-Y2-Z2-CHAMFER.stl</uri>
+                        <uri>model://X2-Y2-Z2-FILLET/meshes/X2-Y2-Z2-FILLET.stl</uri>
                     </mesh>
                 </geometry>
 
                 <max_contacts>10</max_contacts>
                 <surface>
                     <contact>
+                        <collide_bitmask>0x0010</collide_bitmask>
                         <ode>
                             <mu>0.1</mu>
                             <mu2>0.1</mu2>
@@ -44,16 +45,16 @@
                     </friction>
                 </surface>
             </collision>
-            <visual name="visual">
+             <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://X1-Y2-Z2-CHAMFER/meshes/X1-Y2-Z2-CHAMFER.stl</uri>
+            <uri>model://X2-Y2-Z2-FILLET/meshes/X2-Y2-Z2-FILLET.stl</uri>
           </mesh>
         </geometry>
         <material>
           <script>
             <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/SkyBlue</name>
+            <name>Gazebo/White</name>
           </script>
         </material>
       </visual>

@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <sdf version="1.4">
-    <model name="X1-Y4-Z1">
+    <model name="X1-Y2-Z2">
         <link name="link">
             <pose>-0.0 -0.0 -0.0 0 0 0</pose>
-            <inertial>
+             <inertial>
                 <mass>0.00891495</mass>
                 <inertia>
                     <ixx>5.98e-04</ixx>
@@ -18,13 +18,14 @@
                 <geometry>
                     <mesh>
                         <scale>1 1 1</scale>
-                        <uri>model://X1-Y4-Z1/meshes/X1-Y4-Z1.stl</uri>
+                        <uri>model://X1-Y2-Z2/meshes/X1-Y2-Z2.stl</uri>
                     </mesh>
                 </geometry>
 
                 <max_contacts>10</max_contacts>
                 <surface>
                     <contact>
+                        <collide_bitmask>0x0001</collide_bitmask>
                         <ode>
                             <mu>0.1</mu>
                             <mu2>0.1</mu2>
@@ -44,16 +45,16 @@
                     </friction>
                 </surface>
             </collision>
-                        <visual name="visual">
+            <visual name="visual">
         <geometry>
           <mesh>
-             <uri>model://X1-Y4-Z1/meshes/X1-Y4-Z1.stl</uri>
+            <uri>model://X1-Y2-Z2/meshes/X1-Y2-Z2.stl</uri>
           </mesh>
         </geometry>
         <material>
           <script>
             <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/DarkYellow</name>
+            <name>Gazebo/Green</name>
           </script>
         </material>
       </visual>
