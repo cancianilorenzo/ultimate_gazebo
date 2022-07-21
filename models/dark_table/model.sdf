@@ -17,7 +17,7 @@
       <self_collide>0</self_collide>
       <enable_wind>0</enable_wind>
       <kinematic>0</kinematic>
-      <pose>0 0 0.770 0 -0 0</pose>
+      <pose>0 0 0.775 0 -0 0</pose>
       <gravity>0</gravity>
       <visual name='visual'>
         <geometry>
@@ -44,14 +44,14 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <box>
-            <size>0.913 0.913 0.04</size>
+            <size>0.913 0.913 0.02</size>
           </box>
         </geometry>
-        <surface>
+        <!-- <surface>
           <friction>
             <ode>
-              <mu>0.5</mu>
-              <mu2>0.5</mu2>
+              <mu>10000</mu>
+              <mu2>10000</mu2>
               <fdir1>0 0 0</fdir1>
               <slip1>0</slip1>
               <slip2>0</slip2>
@@ -79,7 +79,7 @@
               <soft_erp>0.2</soft_erp>
               <kp>1e+13</kp>
               <kd>1</kd>
-              <max_vel>0.01</max_vel>
+              <max_vel>0.00</max_vel>
               <min_depth>0</min_depth>
             </ode>
             <bullet>
@@ -91,7 +91,23 @@
               <kd>1</kd>
             </bullet>
           </contact>
-        </surface>
+        </surface> -->
+        <surface>
+            <contact>
+              <collide_bitmask>65535</collide_bitmask>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
       </collision>
     </link>
     <link name='link_0'>
